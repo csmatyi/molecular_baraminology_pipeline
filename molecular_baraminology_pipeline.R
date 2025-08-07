@@ -10,7 +10,8 @@ library(factoextra)
 library(diptest)
 library(e1071)
 
-setwd("C:\\Users\\csmat\\OneDrive\\Desktop\\CreationScience\\Talks\\CRSconferences\\CRS2025\\workshop\\Elephants")
+# set this path
+setwd("path\\to\\your\\work\\directory")
 
 # Define list of Latin species names
 species_list <- read.table(choose.files(filters = Filters[c("txt"),]),sep="\t",check.names=FALSE)
@@ -245,3 +246,4 @@ for (n_cluster in 1:n) {
     write(stats, file="cluster_stats.txt", sep="\t", append = T)
   }
 }
+
